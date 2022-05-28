@@ -1,0 +1,8 @@
+.appContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*should be change in responsive design*/
+    padding-top: 2rem;
+}

@@ -1,0 +1,24 @@
+.container{
+    /*should be change in responsive design*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*should be change in responsive design*/
+    margin-bottom: 1rem;
+
+}
+
+.middleSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /*should be change in responsive design*/
+     margin-bottom: 1rem;
+}
