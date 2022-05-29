@@ -1,0 +1,58 @@
+.transactionForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     /*should be change in responsive design*/
+    min-height: 170px;
+     /*should be change in responsive design*/
+    margin-bottom: 30px;
+
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ede9fe;
+    color: #6d28d9;
+     /*should be change in responsive design*/
+    padding: 5px 10px;
+    border: 1px solid #6d28d9;
+
+}
+
+.primary{
+    color: #fff;
+    background-color: #6d28d9;
+    border: none;
+     /*should be change in responsive design*/
+     padding: 8px 10px;
+
+}
+input{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+     /*should be change in responsive design*/
+    padding: 10px 12px;
+}
+
+input[type="radio"]{
+     /*should be change in responsive design*/
+    margin-left: 10px;
+}
+
+.radioBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+     /*should be change in responsive design*/
+    font-size: 14px;
+}
+
+.radioBox label{
+    /*should be change in responsive design*/
+    margin-left: 3px;
+    /*should be change in responsive design*/
+    font-size: 14px;
+}

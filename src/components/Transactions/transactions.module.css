@@ -1,0 +1,13 @@
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #f4f4f5;
+     /*should be change in responsive design*/
+    padding: 10px;
+    font-weight: bold;
+     /*should be change in responsive design*/
+    margin-top: 15px;
+     /*should be change in responsive design*/
+    border-right: 4px solid green;
+}
