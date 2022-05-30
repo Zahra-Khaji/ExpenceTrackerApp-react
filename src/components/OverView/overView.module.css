@@ -1,17 +1,20 @@
 .container{
-    /*should be change in responsive design*/
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-
+    padding: 1rem;
+    /* background-color: yellow; */
 }
 
 .topSection{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*should be change in responsive design*/
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+}
+.text{
+    color: #4B5563;
 
 }
 
@@ -19,22 +22,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-     /*should be change in responsive design*/
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .expenseBox{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-     /*should be change in responsive design*/
-    width: 135px;
-     /*should be change in responsive design*/
-    height: 60px;
-     /*should be change in responsive design*/
-    padding: 5px 10px;
+    width: 10rem;
+    height: 6rem;
+    padding: 0.5rem 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #374151;
+
+
 
 }
 
@@ -47,16 +49,37 @@
     cursor: pointer;
     outline: none;
     border-radius: 5px;
-    background-color: #ede9fe;
-    color: #6d28d9;
-     /*should be change in responsive design*/
-    padding: 5px 10px;
-    border: 1px solid #6d28d9;
+    background-color: #D1D5DB;
+    color: #4B5563;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4B5563;
 
 }
 
 .cancel{
-    background-color: #fff;
-    color: #dc2626;
-    border: 1px solid #dc2626;
+    color: #EF4444;
+    border: 1px solid #EF4444;
+    background-color: var(--body-color);
 }
+
+@media screen and (min-width:768px){
+    
+.topSection,.middleSection{
+    justify-content: space-evenly;
+}
+.expenseBox{
+    width: 14rem;
+    height: 8rem;
+    font-size: 1.5rem;
+
+
+}
+
+.btn{
+    font-size: 1.7rem;
+}
+
+
+
+} 

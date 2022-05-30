@@ -4,7 +4,7 @@ const App = () => {
     return ( 
         <div className="App">
             <header>
-                <h2>Expense Tracker</h2>
+                <h1>تراکنش های روزانه</h1>
             </header>
             <ExpenseApp/>
 

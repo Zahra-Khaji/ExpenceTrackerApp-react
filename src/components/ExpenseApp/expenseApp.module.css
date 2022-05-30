@@ -1,8 +1,11 @@
 .appContainer{
+    width: 100%;
+    max-width: 1140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /*should be change in responsive design*/
-    padding-top: 2rem;
+    align-items: center;
+    border-radius: 0.7rem;
+    padding: 2rem;
+    border: 1px solid var(--primaryBorder-color);
 }

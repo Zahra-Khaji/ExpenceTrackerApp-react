@@ -4,6 +4,31 @@
     box-sizing: border-box;
 }
 
-html{
-    /* font-size: 62.5%; */
+html {
+    font-size: 62.5%;
 }
+
+:root{
+    --body-color:#F3F4F6;
+    --header-color :#4B5563;
+    --mainContainer-color :#E5E7EB;
+    --primaryBorder-color :#9CA3AF;
+
+
+}
+
+@font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url("./assets/fonts/IRANYekanWebRegular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "iranyekan";
+    font-style: normal;
+    /* font-weight: 700; */
+    src: url("./assets/fonts/IRANYekanWebBold.woff") format("woff");
+  }
+  body,button,input {
+    font-family: "iranyekan";
+  }

@@ -19,23 +19,23 @@ const TransactionForm = ({addTransaction,setIsShow}) => {
         <form className={style.transactionForm} onSubmit={submitHandler}>
             <input type="text" name="desc" onChange={changeHandler} 
             value={transaction.desc}
-            placeholder="description"
+            placeholder="توضیحات تراکنش"
             />
             <input type="number" name="amount" onChange={changeHandler}
              value={transaction.amount}
-             placeholder="amount"
+             placeholder="مبلغ تراکنش"
              />
             <div className={style.radioBox}>
                 <input type="radio" id="expense" name="type" value="expense"
                  onChange={changeHandler} checked={transaction.type==="expense"}
                  />
-                <label htmlFor="expense">Expense</label>
+                <label htmlFor="expense">هزینه</label>
                 <input type="radio" id="income" name="type" value="income"
                  onChange={changeHandler} checked={transaction.type==="income"}
                 />
-                <label htmlFor="income">Income</label>
+                <label htmlFor="income">درآمد</label>
             </div>
-            <button type="submit"  className={`${style.btn} ${style.primary}`} >Add Transaction</button>
+            <button type="submit"  className={style.btn} >اضافه کردن به لیست تراکنش ها</button>
 
         </form>
      );

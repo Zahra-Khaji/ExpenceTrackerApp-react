@@ -7,15 +7,15 @@ const OverView = ({income,expense,addTransaction}) => {
     return ( 
         <section className={style.container}>
             <div className={style.topSection}>
-                <p>Balance : {income - expense}</p>
+                <p className={style.text}>مانده: {income - expense} تومان</p>
                 <button  className={`${style.btn} ${isShow && style.cancel }`} onClick={()=>setIsShow((prevState)=>!prevState)}>
-                    {isShow ? "cancel" : "add"}
+                    {isShow ? "انصراف" : "اضافه کردن تراکنش"}
                 </button>
             </div>
             {isShow && <TransactionForm addTransaction={addTransaction} setIsShow={setIsShow}/>}
             <div className={style.middleSection}>
-                <div className={style.expenseBox}>expense<span style={{color:"red"}}>{expense} $</span> </div>
-                <div className={style.expenseBox}>income<span>{income} $</span> </div>
+                <div className={style.expenseBox}>مجموع هزینه:<span style={{color:"red"}}>{expense} تومان</span> </div>
+                <div className={style.expenseBox}>مجموع درآمد:<span>{income} تومان</span></div>
             </div>
         </section>
      );
