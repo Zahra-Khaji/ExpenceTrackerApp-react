@@ -10,21 +10,45 @@
 }
 
 header{
-    color: var(--header-color);
-    margin: 3.5rem 0;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.iconholder{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color:#4B5563 ;
+    background-color: #fff;
+    border: 3px solid #4B5563;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    width: 4rem;
+    height:4rem;
 }
 h1{
     font-size: 1.5rem;
     font-weight: 900;
+    color: var(--header-color);
+
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:600px){
     h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     }
     .App{
         font-size: 1.7rem;
     }
-    
+    .iconholder{
+        width: 7rem;
+        height:7rem;
+
+    }
 
 } 

@@ -12,6 +12,16 @@ const ExpenseApp = () => {
     const addTransaction = (transaction) => {
         setTransactions([...transactions,{...transaction,id:Date.now()}]);
     }
+
+    useEffect(()=>{
+       const savedTnx = JSON.parse(localStorage.getItem("transactions"));
+       if(savedTnx)
+            setTransactions(savedTnx);
+    
+    },[]);
+    useEffect(()=>{
+        localStorage.setItem("transactions",JSON.stringify(transactions));
+     },[transactions]);
     useEffect(()=>{
         let inc = 0;
         let exp = 0;
@@ -25,7 +35,7 @@ const ExpenseApp = () => {
         setExpense(exp);
     
 
-    },[transactions])
+    },[transactions]);
 
     return ( 
         <section className={style.appContainer} >

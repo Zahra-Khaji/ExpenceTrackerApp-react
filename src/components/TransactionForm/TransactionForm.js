@@ -10,6 +10,10 @@ const TransactionForm = ({addTransaction,setIsShow}) => {
     }
     const submitHandler = (e) => {
         e.preventDefault();
+        if(transaction.amount === ""){
+            alert("مبلغ تراکنش را وارد کنید");
+            return;
+        }
         addTransaction(transaction);
         setIsShow(false);
 

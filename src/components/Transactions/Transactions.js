@@ -23,16 +23,16 @@ const Transactions = ({transactions}) => {
         filterTnx(searchItem);
     },[transactions])
     return ( 
-        <section >
+        <section>
            {transactions.length ? <input type="text" value={searchItem}
-             onChange={searchHandler} placeholder="search here..."
+             onChange={searchHandler} 
+             className={style.serachInput}
+             placeholder="جستجو"
              /> : ""}
             { filterdeTnx.map((t)=>(
                 <div className={style.transaction} key={t.id} style={{borderRight:t.type === "expense" && "4px solid red"}}>
                     <span>{t.desc}</span>
-                    <span>${t.amount}</span>
-
-                  
+                    <span>{t.amount} تومان</span>
                 </div>
             ))}
         </section>

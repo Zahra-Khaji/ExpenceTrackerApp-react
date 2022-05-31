@@ -4,9 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* background-color: yellow; */
     min-height: 18rem;
-    /* max-width: 500px; */
     margin-bottom: 3rem;
 
 }
@@ -14,11 +12,13 @@
 .btn{
     cursor: pointer;
     outline: none;
-    border-radius: 5px;
-    background-color: #D1D5DB;
+    border-radius: 7px;
+    background-color: hsl(216, 12%, 84%);
+    /* background-color: #FFF; */
+
     color: #4B5563;
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.2rem;
     border: 1px solid #4B5563;
 
 }
@@ -31,7 +31,12 @@ input{
     border-radius: 5px;
     border: 1px solid #9CA3AF;
     padding: 1rem 1.2rem;
+    /* margin-bottom: 1rem; */
 }
+/* .formInput{
+    margin-bottom: 1rem;
+
+} */
 
 input:hover{
     border: 2px solid #9CA3AF;
@@ -54,7 +59,7 @@ input[type="radio"]{
     color: #374151;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:600px){
     input{
         display: block;
         padding: 2rem 12rem;

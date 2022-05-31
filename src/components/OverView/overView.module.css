@@ -3,18 +3,27 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    /* background-color: yellow; */
+
 }
 
 .topSection{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--primaryBorder-color);
+    border-radius: 8px;
+    padding: 1rem 1rem;
+
+
 
 }
 .text{
     color: #4B5563;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 
 }
 
@@ -24,25 +33,40 @@
     align-items: center;
     margin-bottom: 1rem;
 }
+.reminder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    border-radius: 100%;
+    color:#4B5563 ;
+    background-color: #fff;
+    border: 3px solid #4B5563;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
 .expenseBox{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     width: 10rem;
-    height: 6rem;
+    height: 10rem;
     padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid var(--primaryBorder-color);
+    border-radius: 100%;
     color: #374151;
-
-
-
+    margin-bottom: 2rem;
+    background-color: #fff;
 }
 
 .expenseBox span{
-    font-weight: bold;
-    color: green;
+    color: #65a30d;
+    font-weight: 600;
 }
 
 .btn{
@@ -62,15 +86,48 @@
     border: 1px solid #EF4444;
     background-color: var(--body-color);
 }
+.iconholder{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color:#4B5563 ;
+    background-color: #fff;
+    border: 3px solid #4B5563;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    width: 3rem;
+    height:3rem;
+}
+.iconCancelHolder{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e879f9; */
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    width: 3rem;
+    height:3rem;
+    color: #fff;
+    background-color: #DC2626;
+    border: 1px solid #DC2626;
 
-@media screen and (min-width:768px){
+    /* border: 1px solid #701a75; */
+
+
+}
+
+@media screen and (min-width:600px){
     
 .topSection,.middleSection{
     justify-content: space-evenly;
 }
 .expenseBox{
     width: 14rem;
-    height: 8rem;
+    height: 14rem;
     font-size: 1.5rem;
 
 
@@ -78,6 +135,17 @@
 
 .btn{
     font-size: 1.7rem;
+}
+
+.iconholder,iconCancelHolder{
+    width: 4rem;
+    height: 4rem;
+}
+.topSection{
+    margin-bottom: 3rem;
+    justify-content: space-around;
+    padding: 1.2rem 1rem;
+
 }
 
 
